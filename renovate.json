@@ -1,5 +1,21 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "baseBranches": ["master"],
+  "separateMultipleMajor": true,
+  "rangeStrategy": "pin",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "prCreation": "not-pending",
+  "stabilityDays": 3,
+  "prHourlyLimit": 5
 }
