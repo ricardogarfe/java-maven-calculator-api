@@ -16,8 +16,8 @@
         <hamcrest.version>2.2</hamcrest.version>
         <junit.version>5.8.2</junit.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <jetty.maven.plugin.version>10.0.7</jetty.maven.plugin.version>
-        <jersey-version>2.35</jersey-version>
+        <jetty.maven.plugin.version>11.0.7</jetty.maven.plugin.version>
+        <jersey-version>3.0.3</jersey-version>
     </properties>
 
     <dependencies>
