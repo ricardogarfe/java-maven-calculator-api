@@ -30,9 +30,3 @@ jobs:
         run: mvn test
       - name: Integration tests
         run: mvn integration-test
-      - name: Run app
-        run: mvn jetty:run
-      - name: Jmeter tests
-        run: mvn  jmeter:jmeter
-      - name: Stop app
-        run: mvn jetty:stop
