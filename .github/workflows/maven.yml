@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-java@v2.5.0
         with:
           java-version: '11'
+          distribution: 'zulu'
           cache: maven
       - name: Compile
         run: mvn compile
