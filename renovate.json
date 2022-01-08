@@ -16,6 +16,5 @@
     "renovate"
   ],
   "prCreation": "not-pending",
-  "stabilityDays": 3,
-  "prHourlyLimit": 5
+  "stabilityDays": 3
 }
