@@ -16,7 +16,8 @@
         <hamcrest.version>2.2</hamcrest.version>
         <junit.version>5.4.0</junit.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <jersey-version>2.27</jersey-version>
+        <jetty.maven.plugin.version>10.0.7</jetty.maven.plugin.version>
+        <jersey-version>2.35</jersey-version>
     </properties>
 
     <dependencies>
@@ -93,18 +94,12 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>10.0.7</version>
+                <version>${jetty.maven.plugin.version}</version>
                 <configuration>
                     <webApp>
                         <contextPath>/calculator</contextPath>
                     </webApp>
-                    <webAppSourceDirectory>target/${project.artifactId}-${project.version}</webAppSourceDirectory>
-                    <stopPort>8079</stopPort>
-                    <stopKey>stop-jetty-for-it</stopKey>
-                    <stopWait>10</stopWait>
-                    <httpConnector>
-                        <idleTimeout>60000</idleTimeout>
-                    </httpConnector>
+                    <stopPort>9999</stopPort>
                 </configuration>
                 <executions>
                     <execution>
