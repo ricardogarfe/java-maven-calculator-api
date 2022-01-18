@@ -6,7 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalculatorServiceTest {
+public class CalculatorResponseTest {
 
     @Test
     public void testPing() {

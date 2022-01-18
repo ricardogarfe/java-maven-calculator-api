@@ -27,10 +27,8 @@ jobs:
           cache: 'maven'
       - name: Compile
         run: mvn compile
-      - name: Unit tests
-        run: mvn test
-      - name: Integration tests
-        run: mvn integration-test
+      - name: Test
+        run: mvn verify
       - name: Upload test results
         uses: actions/upload-artifact@v2  # upload test results
         if: success() || failure()        # run this step even if previous step failed
