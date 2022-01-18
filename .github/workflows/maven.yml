@@ -32,7 +32,7 @@ jobs:
       - name: Integration tests
         run: mvn integration-test
       - name: Upload test results
-        uses: actions/upload-artifact@v2  # upload test results
+        uses: actions/upload-artifact@v2
         if: success() || failure()        # run this step even if previous step failed
         with:
           name: test-results
