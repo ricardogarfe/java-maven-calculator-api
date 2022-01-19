@@ -11,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalculatorServiceIT {
+public class CalculatorServiceTestIT {
 
     @Test
     public void testPing() throws Exception {
