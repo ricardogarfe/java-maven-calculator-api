@@ -91,9 +91,13 @@ Project name: **JavaMavenCalculator-flow**
 Execute the Jenkins Pipeline Script File: Jenkinsfile
 
 ### 2.2 Create and Configure Github Actions
-**TBC**
+
+Check actions flow:
+* Maven
+* Test Report
 
 ### 2.3 Create and Configure Gitlab CICD
+
 **TBC**
 
 ## 3. Containerize Your Web App
@@ -147,6 +151,3 @@ $ docker-compse up
 ```
 
 Access the web app at http://localhost:8080/api/calculator/ping in browser.
-
-## Reference
-- [Jenkins Pipeline](https://jenkins.io/doc/book/pipeline/)

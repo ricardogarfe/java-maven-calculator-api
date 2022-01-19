@@ -2,14 +2,14 @@ package com.ricardogarfe.calculator;
 
 import java.util.Date;
 
-public class CalculatorResponse {
+public class Calculator {
 
     int _x;
     int _y;
     int _result;
     String _time;
 
-    public CalculatorResponse(int x, int y, int result) {
+    public Calculator(int x, int y, int result) {
         _x = x;
         _y = y;
         _result = result;

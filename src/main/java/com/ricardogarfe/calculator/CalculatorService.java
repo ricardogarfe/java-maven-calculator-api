@@ -14,34 +14,34 @@ public class CalculatorService {
     @Path("ping")
     @Produces(MediaType.TEXT_PLAIN)
     public String ping() {
-        return "Welcome to Java Maven Calculator Web App!!!\n" + new Date().toString();
+        return "Welcome to Java Maven Calculator Web App!!!\n" + new Date();
     }
 
     @GET
     @Path("add")
     @Produces(MediaType.APPLICATION_JSON)
-    public CalculatorResponse Add(@QueryParam("x") int x, @QueryParam("y") int y) {
-        return new CalculatorResponse(x, y, x + y);
+    public Calculator Add(@QueryParam("x") int x, @QueryParam("y") int y) {
+        return new Calculator(x, y, x + y);
     }
 
     @GET
     @Path("sub")
     @Produces(MediaType.APPLICATION_JSON)
-    public CalculatorResponse Sub(@QueryParam("x") int x, @QueryParam("y") int y) {
-        return new CalculatorResponse(x, y, x - y);
+    public Calculator Sub(@QueryParam("x") int x, @QueryParam("y") int y) {
+        return new Calculator(x, y, x - y);
     }
 
     @GET
     @Path("mul")
     @Produces(MediaType.APPLICATION_JSON)
-    public CalculatorResponse Mul(@QueryParam("x") int x, @QueryParam("y") int y) {
-        return new CalculatorResponse(x, y, x * y);
+    public Calculator Mul(@QueryParam("x") int x, @QueryParam("y") int y) {
+        return new Calculator(x, y, x * y);
     }
 
     @GET
     @Path("div")
     @Produces(MediaType.APPLICATION_JSON)
-    public CalculatorResponse Div(@QueryParam("x") int x, @QueryParam("y") int y) {
-        return new CalculatorResponse(x, y, x / y);
+    public Calculator Div(@QueryParam("x") int x, @QueryParam("y") int y) {
+        return new Calculator(x, y, x / y);
     }
 }

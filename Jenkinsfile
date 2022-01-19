@@ -10,9 +10,6 @@ node {
    stage('Integration Test') {
      sh "'${mvnHome}/bin/mvn' integration-test"
    }
-  stage('Performance Test') {
-     sh "'${mvnHome}/bin/mvn' verify"
-   }
    stage('Deploy') {
       timeout(time: 10, unit: 'MINUTES') {
            input message: 'Deploy this web app to production ?'
