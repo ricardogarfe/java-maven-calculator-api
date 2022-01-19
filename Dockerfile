@@ -6,7 +6,7 @@ USER jetty
 WORKDIR /home/jetty
 
 EXPOSE 8080
-# Run subsequent commands as obp user
+# Run subsequent commands as jetty user
 USER jetty
 
 ADD pom.xml /home/jetty
